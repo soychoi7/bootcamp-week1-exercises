@@ -17,7 +17,7 @@ for (let i = 0; i < 30; ++i) {
 
   do {
     requestorId = casual.random_element(userData).id
-  } while (requestedId !== requestorId)
+  } while (requestedId === requestorId)
 
   friends.push(casual.friend({ requestorId, requestedId }))
 }

@@ -19,3 +19,6 @@ Let's expand on our usage of Objection and add onto our models.
 3. For each model, write a couple virtual attributes to simplify our database querying, then test these additions in exercise 9.
 4. Practice using instance methods in exercise 10.
 5. Implement a transaction in exercise 11. You can check that the rollback works correctly by deliberately causing an error: `throw new Error('Database interaction failed!')`.
+
+
+**Stretch Task**: Use [$beforeUpdate](https://vincit.github.io/objection.js/api/model/instance-methods.html#beforeupdate) on the BaseModel to set the updated_at column to the current time whenever data is updated.
