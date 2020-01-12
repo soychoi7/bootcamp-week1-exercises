@@ -7,14 +7,14 @@
     "rollback": "npx knex -- migrate:rollback",
     "seed": "npx knex -- seed:run",
     "test": "jest",
-    "lint": "eslint \"src/**/*.js\""
+    "lint": "eslint \"src/**/*.js\" \"data/*.js\""
   },
   "license": "ISC",
   "dependencies": {
-    "casual": "^1.5.19",
+    "casual": "^1.6.2",
     "dotenv": "^8.2.0",
-    "knex": "^0.16.3",
-    "objection": "^1.4.0",
+    "knex": "^0.20.7",
+    "objection": "^2.1.2",
     "pg": "^7.17.1"
   },
   "devDependencies": {

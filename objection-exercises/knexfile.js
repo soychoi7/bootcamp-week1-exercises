@@ -4,16 +4,15 @@ require('dotenv').config({
   path: path.join(__dirname, '.env'),
 })
 
-const config = require('./src/config')
 
 // Default Knex settings
 module.exports = {
   client: 'pg',
   connection: {
-    host: config.db.host,
-    user: config.db.user,
-    password: config.db.password,
-    database: config.db.database,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
     ssl: true,
   },
   migrations: {
@@ -25,7 +24,7 @@ module.exports = {
   useNullAsDefault: true,
   pool: {
     min: 2,
-    max: config.db.max_connections,
+    max: 5,
     afterCreate(conn, done) {
       conn.on('error', error => {
         console.log('Database connection error!')

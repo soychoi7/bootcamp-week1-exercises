@@ -1,2 +1,4 @@
-# bootcamp-week1-exercises
-Exercises for week 1 of the DEV Winter Bootcamp
+# Week 1 Exercises: Backend Development & Networking
+
+Day 5 AM & PM: fb-mini
+Day 6 AM & PM: objection-exercises
