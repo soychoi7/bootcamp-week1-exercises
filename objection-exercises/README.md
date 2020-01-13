@@ -4,11 +4,11 @@ This morning we'll get started using [Objection.js](https://vincit.github.io/obj
 
 ### Writing Models
 
-Our database has 3 tables: users, friends, and pets. Their names are pretty self-explanatory... users has a has-one relation with pets and a many-to-many relation with friends. Your jobs is to write these relations explicitly in the models (under `src/models`) for all three tables. The User model has been started for you already. Don't forget the `tableName` method of each class as well!
+Our database has 3 tables: users, relations, and pets. Users has a has-many relation with pets, and pets has a belongs-to-one relation with users. Relations is a through table describing parent/child relations between users. Your jobs is to write these relations explicitly in the models (under `src/models`) for all three tables. The User model has been started for you already. Don't forget the `tableName` method of each class as well!
 
 ### Practicing Queries
 
-Now that you have the basic models set up, Objection knows exactly how your database is structured. Let's practice writing some queries! Under `src/exercises` is a bunch of exercises to practice syntax for writing database queries. In each file you'll find some comments with directions. Complete exercises 00-07 to fetch some data from the database, and then `console.log` your results. To test your implementation type `node src/exercises/<EXERCISE>.js`, e.g. `node src/exercises/0_select.js`. If you're running low on time, make sure you get around to exercise 7: Joins!
+Now that you have the basic models set up, Objection knows exactly how your database is structured. Let's practice writing some queries! Under `src/exercises` is a bunch of exercises to practice syntax for writing database queries. In each file you'll find some comments with directions. Complete exercises 00-07 to fetch some data from the database, and then `console.log` your results. To test your implementation type `node src/exercises/<EXERCISE>.js`, e.g. `node src/exercises/00_select.js`. If you're running low on time, make sure you get around to exercise 7: Joins!
 
 # Day 6 PM: Advanced ORM Usage
 

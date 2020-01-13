@@ -4,11 +4,13 @@ const cleanup = require('../lib/cleanup')
 const run = async () => {
   // Write Queries and Logs Here !!!
 
-  // Get an instance of yourself using findById(<YOUR_ID>)
+  // Get an instance of a user using findById(<YOUR_ID>)
 
-  // Use that instance to create a new pet related to you
+  // Use that instance to create a new pet related that user
 
-  // Use that instance to get all of your pets and friends
+  // Use that instance to get all of the user's pets and children
+  // Hint -- use $fetchGraph
+  // https://vincit.github.io/objection.js/api/model/instance-methods.html#fetchgraph
 
   // -----
   cleanup()

@@ -6,11 +6,11 @@ const run = async () => {
 
   // Get all users and their pets
 
-  // Get all users, their pets, AND their friends
+  // Get all users, their pets, AND their children
 
-  // Get all users, their friends, and their friends' friends
+  // Get all users, their parents, and their grandparents
 
-  // Get all users, their pets, their friends, and the friends pets
+  // Get all users, their pets, their chilren, and their childrens' pets
 
   // -----
   cleanup()
